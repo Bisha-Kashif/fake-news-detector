@@ -68,3 +68,6 @@ User types headline
 ---
 
 *Pre-Mid ML Project · PUCIT 2025 · Bisha Kashif*
+
+## Model Accuracy
+Test Accuracy: 98%. F1-Score: 0.97
