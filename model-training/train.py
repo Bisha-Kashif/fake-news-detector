@@ -396,3 +396,5 @@ def train(data_dir="data", output_dir="."):
 
 if __name__ == "__main__":
     train(data_dir="data", output_dir=".")
+
+# Dataset: ISOT Fake News - 44000+ articles
