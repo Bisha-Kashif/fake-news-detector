@@ -74,3 +74,5 @@ def predict(req: Request):
         "verdict":    verdict,
         "emoji":      emoji,
     }
+
+# API v2 - confidence threshold at 70%
