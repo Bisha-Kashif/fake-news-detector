@@ -1,0 +1,92 @@
+=====================================================
+  HOW TO HOST — 2 STEPS ONLY
+=====================================================
+
+=====================================================
+  STEP 1 — HOST BACKEND ON HUGGINGFACE
+=====================================================
+Upload everything inside the  backend/  folder:
+
+  Files to upload:
+    - app.py
+    - Dockerfile
+    - requirements.txt
+    - fake_news_model.pkl
+    - vectorizer.pkl
+
+  How:
+    1. Go to huggingface.co → Log in
+    2. Click profile → New Space
+    3. Name: fake-news-detector
+    4. SDK: Docker
+    5. Visibility: Public
+    6. Click Create Space
+    7. Upload all 5 files above
+    8. Wait 2-3 min for build
+
+  Your API URL:
+    https://bisha-kashif-fake-news-detector.hf.space
+
+  Test it works:
+    https://bisha-kashif-fake-news-detector.hf.space/health
+
+=====================================================
+  STEP 2 — HOST FRONTEND ON GITHUB PAGES
+=====================================================
+  1. Push this whole project to GitHub (already done)
+  2. Go to your repo on github.com
+  3. Settings → Pages (left sidebar)
+  4. Source: Deploy from branch
+  5. Branch: main  |  Folder: / (root)
+  6. Save
+
+  Then update the API_URL in frontend/index.html:
+  Find this line:
+    const API_URL = "https://bisha-kashif-fake-news-detector.hf.space/predict";
+  Make sure it matches your HuggingFace URL exactly.
+
+  Push the change:
+    git add frontend/index.html
+    git commit -m "update API URL to HuggingFace"
+    git push
+
+  Your frontend URL:
+    https://Bisha-Kashif.github.io/fake-news-detector/frontend/
+
+=====================================================
+  WHAT TO POST ON CLASSROOM
+=====================================================
+  GitHub:   https://github.com/Bisha-Kashif/fake-news-detector
+  LinkedIn: [your post link]
+  Frontend: https://Bisha-Kashif.github.io/fake-news-detector/frontend/
+  Backend:  https://bisha-kashif-fake-news-detector.hf.space
+
+=====================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Submission Instructions
+
+- The lab must be submitted before 1:45 PM. No submissions will be accepted after the deadline under any circumstances, and late submissions will result in mark deductions.
+- Students with Roll Numbers 1–25 must submit their lab to: bitf23m005@pucit.edu.pk
+- Students with Roll Numbers 26 onwards must submit their lab to: bitf23m016@pucit.edu.pk
+- Submit your lab in PDF format only. Do not submit your lab in Word document format, as this has already been communicated, yet it was still submitted in previous labs.
+- The use of a trace file is not allowed for this lab.All answers must be based on your own captured packets.
